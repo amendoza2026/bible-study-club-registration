@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Study Club Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(amen.jpg);
+            background-size: cover;
+            font-family: 'Dancing Script', cursive;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body class="container">
+    <h1>Bible Study Club Registration Form</h1> 
+    <form action="http://sirjm.infinityfreeapp.com/aa1receiver.php">
+        Name (Surname, Given Name MI.): <input type="text" name="studname" placeholder="Christ, Jesus H." class="form-control"><br>
+
+        Email address: <input type="text" name="emailadd" placeholder="jchrist0014@clc.pshs.edu.ph" class="form-control"><br>
+
+        Sex:
+        <div class="form-check">
+            <input id="optSexMale" type="radio" name="biosex" value="male" class="form-check-input">
+            <label for="optSexMale" class="form-check-label">Male</label>
+        </div>
+        <div class="form-check">
+            <input id="optSexFemale" type="radio" name="biosex" value="female" class="form-check-input">
+            <label for="optSexFemale" class="form-check-label">Female</label>
+        </div>
+        
+        Section: <select class="form-select" name="gradelevel">
+            <option value="grade7">Grade 7</option>
+            <option value="grade8">Grade 8</option>
+            <option value="grade9">Grade 9</option>
+            <option value="grade10">Grade 10</option>
+            <option value="grade11">Grade 11</option>
+            <option value="grade12">Grade 12</option>
+            </select><br>
+
+        Reasons:
+        <div class="form-check">
+            <input type="checkbox" id="reason1" name="reason[]" value="reason1" class="form-check-input">
+            <label for="reason1" class="form-check-label">I want to reignite my spiritual life.</label><br>
+            <input type="checkbox" id="reason2" name="reason[]" value="reason2" class="form-check-input">
+            <label for="reason2" class="form-check-label">I want to start my spiritual life.</label><br>
+            <input type="checkbox" id="reason3" name="reason[]" value="reason3" class="form-check-input">
+            <label for="reason3" class="form-check-label">I want to reconnect with Jesus Christ, our lord and savior.</label><br>
+            <input type="checkbox" id="reason4" name="reason[]" value="reason4" class="form-check-input">
+            <label for="reason4" class="form-check-label">I am a Christian.</label><br>
+        </div>
+
+        <input type="submit" value="Submit thy response" class="btn btn-danger">
+    </form>
+
+</body>
+</html>
